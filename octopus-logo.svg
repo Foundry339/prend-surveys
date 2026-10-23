@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Ice Blue to Silver-Lavender Gradient -->
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc" />
+      <stop offset="100%" stop-color="#c4b5fd" />
+    </linearGradient>
+
+    <!-- Outer High-Glow Filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur1" />
+      <feGaussianBlur stdDeviation="24" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Subtle Soft Inner Glow -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .bg { fill: #0b0f19; }
+    .octopus-glow {
+      stroke: url(#glowGrad);
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      filter: url(#glow);
+    }
+    .octopus-core {
+      stroke: url(#glowGrad);
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      filter: url(#softGlow);
+    }
+    .octopus-eye {
+      fill: url(#glowGrad);
+      filter: url(#softGlow);
+    }
+  </style>
+
+  <!-- Dark background to make the glowing outline pop -->
+  <rect class="bg" width="800" height="800" rx="40" />
+
+  <g transform="translate(0, 10)">
+    <!-- Deep Layer Glow Effect -->
+    <g class="octopus-glow" stroke-width="14" opacity="0.65">
+      <!-- Head / Mantle -->
+      <path d="M 280 340 
+               C 250 200, 310 140, 400 140 
+               C 490 140, 550 200, 520 340
+               C 500 400, 300 400, 280 340 Z" />
+
+      <!-- Tentacle 1 (Outer Left) -->
+      <path d="M 290 360 
+               C 230 380, 150 420, 150 510 
+               C 150 580, 210 610, 250 570 
+               C 280 540, 250 490, 220 500
+               C 200 505, 195 530, 210 535" />
+
+      <!-- Tentacle 2 (Mid Left) -->
+      <path d="M 320 380 
+               C 270 430, 220 500, 240 590 
+               C 250 630, 290 650, 320 620 
+               C 350 590, 310 540, 290 530" />
+
+      <!-- Tentacle 3 (Inner Left) -->
+      <path d="M 360 395 
+               C 330 450, 310 540, 340 630 
+               C 355 670, 390 670, 400 630 
+               C 410 590, 380 540, 365 520" />
+
+      <!-- Tentacle 4 (Inner Right) -->
+      <path d="M 440 395 
+               C 470 450, 490 540, 460 630 
+               C 445 670, 410 670, 400 630" />
+
+      <!-- Tentacle 5 (Mid Right) -->
+      <path d="M 480 380 
+               C 530 430, 580 500, 560 590 
+               C 550 630, 510 650, 480 620 
+               C 450 590, 490 540, 510 530" />
+
+      <!-- Tentacle 6 (Outer Right) -->
+      <path d="M 510 360 
+               C 570 380, 650 420, 650 510 
+               C 650 580, 590 610, 550 570 
+               C 520 540, 550 490, 580 500
+               C 600 505, 605 530, 590 535" />
+
+      <!-- Eyes (Simple minimal dots) -->
+      <circle class="octopus-eye" cx="355" cy="330" r="10" />
+      <circle class="octopus-eye" cx="445" cy="330" r="10" />
+    </g>
+
+    <!-- Crisp Sharp Foreground Layer -->
+    <g class="octopus-core" stroke-width="7">
+      <!-- Head / Mantle -->
+      <path d="M 280 340 
+               C 250 200, 310 140, 400 140 
+               C 490 140, 550 200, 520 340
+               C 500 400, 300 400, 280 340 Z" />
+
+      <!-- Tentacle 1 (Outer Left) -->
+      <path d="M 290 360 
+               C 230 380, 150 420, 150 510 
+               C 150 580, 210 610, 250 570 
+               C 280 540, 250 490, 220 500
+               C 200 505, 195 530, 210 535" />
+
+      <!-- Tentacle 2 (Mid Left) -->
+      <path d="M 320 380 
+               C 270 430, 220 500, 240 590 
+               C 250 630, 290 650, 320 620 
+               C 350 590, 310 540, 290 530" />
+
+      <!-- Tentacle 3 (Inner Left) -->
+      <path d="M 360 395 
+               C 330 450, 310 540, 340 630 
+               C 355 670, 390 670, 400 630 
+               C 410 590, 380 540, 365 520" />
+
+      <!-- Tentacle 4 (Inner Right) -->
+      <path d="M 440 395 
+               C 470 450, 490 540, 460 630 
+               C 445 670, 410 670, 400 630" />
+
+      <!-- Tentacle 5 (Mid Right) -->
+      <path d="M 480 380 
+               C 530 430, 580 500, 560 590 
+               C 550 630, 510 650, 480 620 
+               C 450 590, 490 540, 510 530" />
+
+      <!-- Tentacle 6 (Outer Right) -->
+      <path d="M 510 360 
+               C 570 380, 650 420, 650 510 
+               C 650 580, 590 610, 550 570 
+               C 520 540, 550 490, 580 500
+               C 600 505, 605 530, 590 535" />
+
+      <!-- Eyes -->
+      <circle class="octopus-eye" cx="355" cy="330" r="8" />
+      <circle class="octopus-eye" cx="445" cy="330" r="8" />
+    </g>
+  </g>
+</svg>
