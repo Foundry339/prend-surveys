@@ -8,14 +8,14 @@
   --bg-2: #0b1020;
   --text: #e8ecf8;
   --muted: #9aa5c4;
-  --cyan: #22d3ee;
-  --purple: #a855f7;
+  --cyan: #7dd3fc;
+  --purple: #c4b5fd;
   --danger: #fb7185;
 
   --surface: rgba(255, 255, 255, 0.045);
   --surface-hover: rgba(255, 255, 255, 0.07);
   --border: rgba(255, 255, 255, 0.1);
-  --border-strong: rgba(34, 211, 238, 0.55);
+  --border-strong: rgba(125, 211, 252, 0.55);
 
   --gradient: linear-gradient(90deg, var(--cyan), var(--purple));
   --radius: 20px;
@@ -46,8 +46,8 @@ body::before {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(60rem 36rem at 12% -8%, rgba(34, 211, 238, 0.13), transparent 60%),
-    radial-gradient(52rem 34rem at 100% 6%, rgba(168, 85, 247, 0.14), transparent 60%),
+    radial-gradient(60rem 36rem at 12% -8%, rgba(125, 211, 252, 0.13), transparent 60%),
+    radial-gradient(52rem 34rem at 100% 6%, rgba(196, 181, 253, 0.14), transparent 60%),
     linear-gradient(180deg, var(--bg-2), var(--bg) 60%);
 }
 
@@ -86,7 +86,7 @@ button { font: inherit; color: inherit; }
 .brand__mark {
   width: 26px; height: 26px; border-radius: 9px;
   background: linear-gradient(135deg, var(--cyan), var(--purple));
-  box-shadow: 0 0 18px rgba(34, 211, 238, 0.35), 0 0 26px rgba(168, 85, 247, 0.25);
+  box-shadow: 0 0 18px rgba(125, 211, 252, 0.35), 0 0 26px rgba(196, 181, 253, 0.25);
 }
 
 .header-link {
@@ -162,9 +162,9 @@ button { font: inherit; color: inherit; }
   transition: border-color 0.2s, background 0.2s, box-shadow 0.25s, transform 0.2s;
 }
 .option:hover .option__body {
-  border-color: rgba(34, 211, 238, 0.45);
+  border-color: rgba(125, 211, 252, 0.45);
   background: var(--surface-hover);
-  box-shadow: 0 0 22px rgba(34, 211, 238, 0.14);
+  box-shadow: 0 0 22px rgba(125, 211, 252, 0.14);
 }
 .option input:focus-visible + .option__body { outline: 2px solid var(--cyan); outline-offset: 3px; }
 
@@ -181,8 +181,8 @@ button { font: inherit; color: inherit; }
 
 .option input:checked + .option__body {
   border-color: var(--border-strong);
-  background: linear-gradient(135deg, rgba(34, 211, 238, 0.1), rgba(168, 85, 247, 0.1));
-  box-shadow: 0 0 26px rgba(168, 85, 247, 0.18);
+  background: linear-gradient(135deg, rgba(125, 211, 252, 0.1), rgba(196, 181, 253, 0.1));
+  box-shadow: 0 0 26px rgba(196, 181, 253, 0.18);
 }
 .option input:checked + .option__body .option__mark { border-color: var(--cyan); }
 .option input:checked + .option__body .option__mark::after { transform: scale(1); }
@@ -194,7 +194,7 @@ button { font: inherit; color: inherit; }
   background: var(--gradient);
   transition: box-shadow 0.25s, transform 0.2s, opacity 0.2s;
 }
-.btn:hover:not(:disabled) { box-shadow: 0 0 28px rgba(34, 211, 238, 0.35), 0 0 34px rgba(168, 85, 247, 0.25); }
+.btn:hover:not(:disabled) { box-shadow: 0 0 28px rgba(125, 211, 252, 0.35), 0 0 34px rgba(196, 181, 253, 0.25); }
 .btn:active:not(:disabled) { transform: translateY(1px); }
 .btn:disabled { opacity: 0.6; cursor: progress; }
 .btn--ghost {
@@ -214,7 +214,7 @@ button { font: inherit; color: inherit; }
   display: inline-flex; align-items: center; gap: 8px;
   margin-bottom: 20px; padding: 8px 14px; border-radius: 999px;
   font-size: 0.95rem; font-weight: 600;
-  color: var(--cyan); background: rgba(34, 211, 238, 0.08); border: 1px solid rgba(34, 211, 238, 0.3);
+  color: var(--cyan); background: rgba(125, 211, 252, 0.08); border: 1px solid rgba(125, 211, 252, 0.3);
 }
 
 .chart__bars { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }
@@ -241,7 +241,7 @@ button { font: inherit; color: inherit; }
 .bar__value { margin-top: 6px; font-size: 0.95rem; color: var(--muted); }
 .bar__value strong { color: var(--text); font-size: 1.05rem; }
 
-.bar.is-mine .bar__track { box-shadow: 0 0 0 1px var(--border-strong), 0 0 20px rgba(34, 211, 238, 0.3); }
+.bar.is-mine .bar__track { box-shadow: 0 0 0 1px var(--border-strong), 0 0 20px rgba(125, 211, 252, 0.3); }
 .bar.is-mine .bar__name { color: var(--cyan); }
 
 .chart__total {
@@ -255,7 +255,7 @@ button { font: inherit; color: inherit; }
 
 .archive-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 .archive-card { overflow: hidden; transition: border-color 0.2s, box-shadow 0.25s; }
-.archive-card:hover { border-color: rgba(168, 85, 247, 0.45); box-shadow: 0 0 26px rgba(168, 85, 247, 0.14); }
+.archive-card:hover { border-color: rgba(196, 181, 253, 0.45); box-shadow: 0 0 26px rgba(196, 181, 253, 0.14); }
 
 .archive-toggle {
   width: 100%; text-align: left; cursor: pointer;
