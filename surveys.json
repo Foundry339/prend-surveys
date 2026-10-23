@@ -1,10 +1,10 @@
 [
   {
-    "id": "2026-10-staff-lunch",
-    "title": "Staff Lunch Preference",
-    "question": "Which option do you prefer for the staff luncheon?",
+    "id": "2026-10-christmas-party",
+    "title": "Staff Christmas Party",
+    "question": "Would you like to attend a staff Christmas party this year?",
     "type": "multiple-choice",
-    "options": ["Pizza", "Sandwich platters", "Taco bar"],
+    "options": ["Yes", "No"],
     "opens": "2026-10-19T07:00:00-04:00",
     "closes": "2026-11-02T15:00:00-05:00"
   },
