@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prend Surveys</title>
+  <meta name="description" content="Quick, anonymous staff surveys.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#070a14">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- ES module: deferred automatically. Needs http(s), see README for local testing. -->
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <h1 class="brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        Prend Surveys
+      </h1>
+      <a class="header-link" href="#archive">Archive</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <!-- Current survey (filled by app.js) -->
+    <section id="hero" class="hero" aria-label="Current survey" aria-busy="true">
+      <p class="muted loading">Loading survey…</p>
+    </section>
+
+    <!-- Closed surveys, newest first (filled by app.js) -->
+    <section id="archive" class="archive" aria-labelledby="archive-title">
+      <h2 id="archive-title" class="section-title">Archive</h2>
+      <div id="archive-list"></div>
+    </section>
+
+    <noscript><p class="notice">Prend Surveys needs JavaScript turned on to work.</p></noscript>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>Votes are anonymous. Only totals are stored.</p>
+  </footer>
+</body>
+</html>

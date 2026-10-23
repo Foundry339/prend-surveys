@@ -1,0 +1,31 @@
+[
+  {
+    "id": "2026-10-staff-lunch",
+    "title": "Staff Lunch Preference",
+    "question": "Which option do you prefer for the staff luncheon?",
+    "type": "multiple-choice",
+    "options": ["Pizza", "Sandwich platters", "Taco bar"],
+    "opens": "2026-10-19T07:00:00-04:00",
+    "closes": "2026-11-02T15:00:00-05:00"
+  },
+  {
+    "id": "2026-09-meeting-day",
+    "title": "Faculty Meeting Day",
+    "question": "Which day works best for the monthly faculty meeting?",
+    "type": "multiple-choice",
+    "options": ["Monday", "Wednesday", "Thursday", "Friday"],
+    "opens": "2026-09-08T07:00:00-04:00",
+    "closes": "2026-09-15T15:00:00-04:00",
+    "sampleResults": [14, 9, 21, 6]
+  },
+  {
+    "id": "2026-06-field-day",
+    "title": "Field Day Theme",
+    "question": "Which theme should we use for this year's Field Day?",
+    "type": "multiple-choice",
+    "options": ["Superheroes", "Olympics", "Color run", "Carnival", "Throwback decades"],
+    "opens": "2026-05-26T07:00:00-04:00",
+    "closes": "2026-06-02T15:00:00-04:00",
+    "sampleResults": [11, 18, 7, 12, 4]
+  }
+]
