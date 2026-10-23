@@ -11,7 +11,7 @@
  *   "firebase" – counts live in Firebase Firestore, shared by everyone.
  *                Fill in FIREBASE_CONFIG below first (see README.md).
  */
-export const ADAPTER = "local";
+export const ADAPTER = "firebase";
 
 /**
  * FIREBASE CONFIG  (only used when ADAPTER = "firebase")
@@ -19,12 +19,12 @@ export const ADAPTER = "local";
  * These values are safe to publish; access is controlled by your Firestore rules.
  */
 export const FIREBASE_CONFIG = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID",
+  apiKey: "AIzaSyBlfuU9ksarjygvuyJ7vX5ZIJak6F6zhKE",
+  authDomain: "prend-surveys.firebaseapp.com",
+  projectId: "prend-surveys",
+  storageBucket: "prend-surveys.firebasestorage.app",
+  messagingSenderId: "767420321919",
+  appId: "1:767420321919:web:70f44b02a6775b6cd02f4a",
 };
 
 /** Firestore collection that holds one document per survey. */
