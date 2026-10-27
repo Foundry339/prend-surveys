@@ -20,8 +20,7 @@
   --gradient: linear-gradient(90deg, var(--cyan), var(--purple));
   --radius: 20px;
   --radius-sm: 14px;
-  --font: "Space Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-display: "Orbitron", "Space Grotesk", system-ui, sans-serif;
+  --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -82,8 +81,7 @@ button { font: inherit; color: inherit; }
 
 .brand {
   display: flex; align-items: center; gap: 10px;
-  font-family: var(--font-display);
-  font-size: 1.05rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  font-size: 1.15rem; font-weight: 800; letter-spacing: -0.02em;
 }
 .brand__mark {
   width: 36px; height: 36px; border-radius: 10px; display: block;
@@ -133,16 +131,15 @@ button { font: inherit; color: inherit; }
 }
 
 .survey-title {
-  font-family: var(--font-display);
-  font-size: clamp(1.4rem, 5vw, 2rem);
-  line-height: 1.25; letter-spacing: 0.02em; font-weight: 700;
+  font-size: clamp(1.7rem, 6vw, 2.4rem);
+  line-height: 1.15; letter-spacing: -0.03em; font-weight: 800;
 }
 .survey-question { margin-top: 10px; font-size: 1.1rem; color: #cfd6ea; }
 
 .hero__body { margin-top: 24px; }
 
 .empty { text-align: center; padding: 44px 20px; }
-.empty .survey-title { font-size: clamp(1.2rem, 4.5vw, 1.6rem); }
+.empty .survey-title { font-size: clamp(1.4rem, 5vw, 1.9rem); }
 .empty p { margin-top: 10px; }
 
 /* ---------- Ballot (multiple choice) ---------- */
@@ -252,7 +249,7 @@ button { font: inherit; color: inherit; }
 
 /* ---------- Archive ---------- */
 .archive { margin: 56px 0 40px; scroll-margin-top: 16px; }
-.section-title { font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 16px; }
+.section-title { font-size: 1.4rem; letter-spacing: -0.02em; font-weight: 700; margin-bottom: 16px; }
 
 .archive-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 .archive-card { overflow: hidden; transition: border-color 0.2s, box-shadow 0.25s; }
