@@ -276,6 +276,12 @@ button { font: inherit; color: inherit; }
 .archive-panel { padding: 4px 18px 22px; }
 .archive-panel[hidden] { display: none; }
 
+.archive-card--locked { cursor: not-allowed; }
+.archive-card--locked:hover { border-color: inherit; box-shadow: none; }
+.archive-card--locked .archive-toggle { cursor: not-allowed; }
+.archive-blur { display: grid; gap: 4px; filter: blur(6px); user-select: none; pointer-events: none; }
+.lock { grid-column: 2; grid-row: 1 / span 3; font-size: 1.4rem; }
+
 .muted.loading, .archive-empty { padding: 24px 4px; }
 
 /* ---------- Footer ---------- */

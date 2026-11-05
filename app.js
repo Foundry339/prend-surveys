@@ -10,7 +10,7 @@
      7. Boot + automatic open/close refresh
    ========================================================================== */
 
-import { TIME_ZONE, SURVEYS_URL } from "./config.js";
+import { TIME_ZONE, SURVEYS_URL, ARCHIVE_MODE } from "./config.js";
 import { getResults, submitVote, seedDemoResults, adapterName } from "./data.js";
 
 const LOG = "[Prend Surveys]";
@@ -416,6 +416,22 @@ function renderHero(survey) {
 }
 
 async function renderArchive(closed) {
+  if (ARCHIVE_MODE === "hidden") {
+    document.getElementById("archive").hidden = true;
+    document.querySelector('.header-link[href="#archive"]')?.setAttribute("hidden", "");
+    return;
+  }
+  if (ARCHIVE_MODE === "locked" && closed.length) {
+    const cards = closed.map((survey) => h("li", { class: "card archive-card archive-card--locked", "aria-label": "Locked survey" },
+      h("div", { class: "archive-toggle" },
+        h("span", { class: "archive-blur", "aria-hidden": "true" },
+          h("span", { class: "archive-title" }, survey.title),
+          h("span", { class: "archive-question" }, survey.question),
+          h("span", { class: "archive-meta" }, `Closed ${fmtDay.format(survey.closesAt)}`)),
+        h("span", { class: "lock", role: "img", "aria-label": "Locked" }, "\u{1F512}"))));
+    archiveListEl.replaceChildren(h("ul", { class: "archive-list" }, ...cards));
+    return;
+  }
   if (!closed.length) {
     archiveListEl.replaceChildren(h("p", { class: "muted archive-empty" }, "No past surveys yet."));
     return;

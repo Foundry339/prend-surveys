@@ -30,6 +30,14 @@ export const FIREBASE_CONFIG = {
 /** Firestore collection that holds one document per survey. */
 export const FIRESTORE_COLLECTION = "surveys";
 
+/**
+ * ARCHIVE VISIBILITY  (how past surveys are shown)
+ *   "open"    – cards expand to show results (normal behavior).
+ *   "locked"  – cards are visible with a lock icon and blurred text; can't be opened.
+ *   "hidden"  – the whole Archive section and its header link are removed.
+ */
+export const ARCHIVE_MODE = "locked";
+
 /** All open/close logic and displayed dates use this time zone. */
 export const TIME_ZONE = "America/New_York";
 
