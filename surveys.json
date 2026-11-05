@@ -1,7 +1,7 @@
 [
   {
     "id": "2026-10-christmas-party",
-    "title": "Staff Christmas Party",
+    "title": "Staff Christmas Party 🎄",
     "question": "Would you like to attend a staff Christmas party this year?",
     "type": "multiple-choice",
     "options": ["Yes", "No"],

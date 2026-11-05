@@ -110,8 +110,16 @@ button { font: inherit; color: inherit; }
   to   { opacity: 1; transform: none; }
 }
 
+/* ---------- Anonymous pill ---------- */
+.anon-pill {
+  display: inline-flex; align-items: center; gap: 6px; margin: 20px 0 0;
+  font-size: 0.85rem; font-weight: 600; color: var(--cyan);
+  padding: 5px 14px; border-radius: 999px;
+  border: 1px solid var(--border-strong); background: rgba(125, 211, 252, 0.08);
+}
+
 /* ---------- Hero ---------- */
-.hero { margin-top: 20px; }
+.hero { margin-top: 14px; }
 .hero__card { padding: 24px 20px; position: relative; overflow: hidden; }
 .hero__card::before {            /* thin gradient accent along the top edge */
   content: ""; position: absolute; inset: 0 0 auto 0; height: 2px; background: var(--gradient);
