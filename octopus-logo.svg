@@ -50,7 +50,7 @@
   </style>
 
   <!-- Dark background to make the glowing outline pop -->
-  <rect class="bg" width="800" height="800" rx="40" />
+  <rect class="bg" width="800" height="800" rx="170" />
 
   <g transform="translate(0, 10)">
     <!-- Deep Layer Glow Effect -->
